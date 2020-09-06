@@ -1,0 +1,15 @@
+{
+  "short_name": "SCA",
+  "name": "Social Coding Arena",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "151x151"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

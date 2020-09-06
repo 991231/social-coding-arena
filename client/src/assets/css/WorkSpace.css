@@ -1,0 +1,208 @@
+.entire-workspace-wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  overscroll-behavior: none !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Pane {
+  display: flex;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.workspace-header {
+  z-index: 100;
+}
+
+.workspace-header .navbar {
+  height: 50px;
+}
+
+.workspace-wrapper {
+  position: relative;
+  top: 0, /* auto-calculated by SplitPane */;
+  left: 0, /* auto-calculated by SplitPane */;
+  overflow: hidden;
+  height: calc(100% - 50px); /* total height of preceding siblings */
+}
+
+.Resizer {
+  background: #000;
+  opacity: 0.2;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.Resizer:hover {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.Resizer.horizontal {
+  height: 11px;
+  margin: -5px 0;
+  border-top: 5px solid rgba(255, 255, 255, 0);
+  border-bottom: 5px solid rgba(255, 255, 255, 0);
+  cursor: row-resize;
+  width: 100%;
+}
+
+.Resizer.horizontal:hover {
+  border-top: 5px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+.Resizer.vertical {
+  width: 11px;
+  margin: 0 -5px;
+  border-left: 5px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  cursor: col-resize;
+}
+
+.Resizer.vertical:hover {
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+}
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+.LeftSection_CodeWorkspace {
+  background-color: #4f4f4f;
+  overflow: auto;
+}
+
+.code-section-wrapper {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  overflow-y: hidden;
+}
+
+.code-section {
+  overflow: hidden;
+  resize: both;
+}
+
+.ace-dracula {
+  background-color: #272626;
+  color: #f8f8f2;
+}
+
+.prompt_section {
+  padding: 8%;
+  color: white;
+}
+
+.progress {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  overflow-y: hidden;
+  padding: 6%;
+  color: white;
+  display: inline-block;
+}
+
+.progress_h4 {
+  text-align: center;
+  width: 100%;
+  height: 16%;
+}
+
+.opponentProgress {
+  text-align: left;
+  width: 100%;
+  height: 30%;
+}
+
+.selfProgress {
+  text-align: right;
+  width: 100%;
+  height: 30%;
+}
+
+.progress_nameheader {
+  align-items: flex-start;
+  display: flexbox;
+}
+
+.progress_profile {
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+  float: left;
+}
+
+.self_progress_profile {
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+  float: right;
+}
+
+.progress_name {
+  display: inline-block;
+}
+
+.self_progress_name {
+  margin-right: 15px;
+}
+
+.self_problemSet_progress {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.problemSet_progress {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.testSection {
+  background-color: #272626;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px 20px 20px 20px;
+}
+
+.test_submitButton {
+  position: absolute;
+  font-size: 16px;
+  bottom: 10px;
+  right: 15px;
+  padding: 5px 10px;
+  background-color: #5379ff;
+  border-width: 0;
+  color: white;
+}
+
+.test_submitButton:hover {
+  background-color: #7fbaff;
+}
+
+.passedResults {
+  color: green;
+}
+
+.failedResults {
+  color: red;
+}

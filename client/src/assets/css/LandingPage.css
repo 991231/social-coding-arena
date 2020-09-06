@@ -1,0 +1,115 @@
+.logo_button {
+  outline: 0;
+  border: 0px;
+  font-size: 20px;
+  background-color: #ffffff00;
+}
+
+body {
+  font-family: "Avenir";
+}
+
+.logo_button:focus {
+  outline: 0;
+}
+
+.border_Bottom {
+  border-bottom: 2 solid black;
+}
+
+.link {
+  color: #000000;
+}
+
+.logo_section {
+  position: absolute;
+  width: 250px;
+  top: 15px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.signin_section {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.signin_button:hover {
+  background-color: #dfe9f3;
+}
+
+.signin_button:focus {
+  outline: 0px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.signIn_profile {
+  width: 55px;
+  height: 55px;
+}
+
+.contest_wrapper {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contestButton {
+  font-family: "Avenir Heavy";
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.username-container {
+  width: 150px;
+  text-align: right;
+}
+
+.user-container * {
+  margin: 0 5px 0 5px;
+}
+
+.signin-page-logo {
+  width: 250px;
+  margin: auto;
+}
+
+.signin-page-input-container {
+  margin: 20vh auto auto auto;
+  height: 550px;
+  width: 400px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 3%;
+  align-items: center;
+}
+.signin-page-input {
+  margin-top: 20px;
+}
+
+.center-text-box {
+  text-align: center;
+}
+
+.signin-page-submit-container {
+  display: flex;
+}
+
+.signin-page-error-msg {
+  color: red;
+  margin: auto;
+  text-overflow: eclipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
